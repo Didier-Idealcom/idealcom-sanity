@@ -1,7 +1,7 @@
 export default {
-  name: 'section2',
+  name: 'page_section1',
   type: 'object',
-  title: 'Section 2',
+  title: 'Section 1',
   fields: [
     {
       name: 'image',

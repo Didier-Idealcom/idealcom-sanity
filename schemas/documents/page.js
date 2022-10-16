@@ -1,7 +1,7 @@
 export default {
   name: 'page',
   type: 'document',
-  title: 'Page',
+  title: 'Pages',
   fields: [
     {
       name: 'title',
@@ -9,12 +9,21 @@ export default {
       title: 'Titre'
     },
     {
+      name: 'slug',
+      type: 'slug',
+      title: 'Slug',
+      options: {
+        source: 'title',
+        auto: true
+      }
+    },
+    {
       name: 'content',
       type: 'array',
       title: 'Contenu',
       of: [
-        { type: 'section1' },
-        { type: 'section2' },
+        { type: 'page_section1' },
+        { type: 'page_section2' },
       ]
     }
   ]
